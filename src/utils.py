@@ -94,7 +94,6 @@ def create_database(database_name: str, params: dict) -> None:
 
     cur.execute(f"DROP DATABASE IF EXISTS {database_name}")
     cur.execute(f"CREATE DATABASE {database_name}")
-
     cur.close()
     conn.close()
 
